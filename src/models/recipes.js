@@ -13,7 +13,7 @@ const recipeSchema = new Schema(
     {
         strict: false
     }
-)
+);
 
 recipeSchema.statics.getById = function(id) {
     return this.findOne({ _id: id })
