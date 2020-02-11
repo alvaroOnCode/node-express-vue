@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:local": "cp ./env/.env.local ./src/env/.env && nodemon src/server.js"
+    "start:local": "cp ../env/.env.local src/env/.env && nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
