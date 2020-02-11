@@ -1,8 +1,8 @@
 {
-  "name": "recipes-frontend",
+  "name": "recipes-client",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "alvarojsaavedra@gmail.com",
+  "description": "Recipes Client",
+  "author": "José Manuel Rosa <josemanuel.rosamoncayo@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
@@ -11,6 +11,7 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

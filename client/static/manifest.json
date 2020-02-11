@@ -1,6 +1,6 @@
 {
-  "name": "recipes-frontend",
-  "short_name": "recipes-frontend",
+  "name": "recipes-client",
+  "short_name": "Recipes Client",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",

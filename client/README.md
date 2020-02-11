@@ -1,6 +1,6 @@
-# recipes-frontend
+# recipes-client
 
-> A Vue.js project
+> Recipes Client
 
 ## Build Setup
 
