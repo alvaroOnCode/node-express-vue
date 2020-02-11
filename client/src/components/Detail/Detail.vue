@@ -26,13 +26,14 @@
           method: 'GET',
           url: `${process.env.API}recipes/${this.id}`,
           headers: {
-            'Authorization': `JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.e30.qvnJGw16N5jgAtbKIyI_4SHpcWFWmolGLevQ3PHokZM`
+            'Authorization': localStorage.getItem('token')
           }
         })
           .then(response => response.data)
           .then(data => {
             this.recipe = data
           })
+          .catch(() => this.$router.push({ name: 'login' }))
       }
     }
   }

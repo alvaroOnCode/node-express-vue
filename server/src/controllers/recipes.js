@@ -18,13 +18,13 @@ class RecipeController {
     }
 
     async addRecipe(req, res, next) {
-        const newRecipe = new Recipe({
-            title: req.params.title,
-            description: req.params.description,
-            ingredients: req.params.ingredients,
-            difficulty: req.params.difficulty,
-            servings: req.params.servings,
-            time: req.params.time
+        const newRecipe = new recipe({
+            title: req.body.title,
+            description: req.body.description,
+            ingredients: req.body.ingredients,
+            difficulty: req.body.difficulty,
+            persons: req.body.persons,
+            time: req.body.time
         });
 
         const data = await newRecipe.save();
@@ -40,7 +40,7 @@ class RecipeController {
             description: req.body.description,
             ingredients: req.body.ingredients,
             difficulty: req.body.difficulty,
-            servings: req.body.servings,
+            persons: req.body.persons,
             time: req.body.time
         };
 
