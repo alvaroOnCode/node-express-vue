@@ -22,7 +22,6 @@
         })
           .then(response => response.data)
           .then(data => {
-            console.log('data.token:', data.token)
             localStorage.setItem('token', `JWT ${data.token}`)
             setTimeout(() => {
               this.$router.push({ name: 'home' })
