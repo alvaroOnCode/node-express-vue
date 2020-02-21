@@ -1,7 +1,7 @@
 const jwt = require('jwt-simple');
 
 class AuthMiddleware {
-    checkAuth (req, res, next) {
+    checkAuth(req, res, next) {
         if (!req.headers.authorization || req.headers.authorization === 'null') {
             return res
                 .status(401)

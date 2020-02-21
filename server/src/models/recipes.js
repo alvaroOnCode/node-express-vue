@@ -15,16 +15,16 @@ const recipeSchema = new Schema(
     }
 );
 
-recipeSchema.statics.getById = function(id) {
+recipeSchema.statics.getById = function (id) {
     return this.findOne({ _id: id })
         .lean()
         .exec();
 };
 
-recipeSchema.statics.getAll = function() {
+recipeSchema.statics.getAll = function () {
     return this.find()
         .sort({ title: 'asc' })
         .exec();
 };
 
-module.exports = mongoose.model ('Recipe', recipeSchema);
+module.exports = mongoose.model('Recipe', recipeSchema);

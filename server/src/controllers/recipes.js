@@ -1,7 +1,7 @@
 const recipe = require('../models/recipes');
 
 class RecipeController {
-    async recipes (req, res, next) {
+    async recipes(req, res, next) {
         const data = await recipe.getAll();
 
         return res
